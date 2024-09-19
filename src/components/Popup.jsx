@@ -6,6 +6,9 @@ import { useCvHook } from "./../hooks/useCvHook";
 const Popup = ({ popOpen, popClose }) => {
   const { cvData, data, setCvData, enterPrompt, loading } = useCvHook();
   const [localCvData, setLocalCvData] = useState(cvData);
+  useEffect(()=>{
+    setLocalCvData(cvData)
+  },[cvData])
   const handleInputChange = useCallback((e) => {
     const { id, value } = e.target;
     setLocalCvData((prevData) => ({
