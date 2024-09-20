@@ -128,7 +128,7 @@ const FormEudcation = () => {
               <textarea
                 id={`experience-${index}`}
                 name="educationDetails"
-                value={field.educationDetails || "Masters in Computer Science"}
+                value={field.educationDetails}
                 onChange={(e) => handleChangeInput(index, e)}
                 className="w-full px-3 py-2 border rounded"
               />
