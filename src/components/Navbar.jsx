@@ -8,13 +8,16 @@ const Navbar = () => {
   const handleMenuToggle = () => setOpen(!open);
   return (
     <>
-      {/* Navbar */}
+      {/* Desktop Navbar */}
       <div className="hidden sm:block bg-indigo-700 text-white">
         <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
           {/* Logo Section */}
-          <div className="flex-1">
-            <h1 className="text-white text-3xl">AI-Cv Maker</h1>
-          </div>
+
+          <button className="flex-1">
+            <Link to="/">
+              <h1 className="text-white text-3xl">Cv Maker</h1>
+            </Link>
+          </button>
 
           {/* Navigation Links */}
           <ul className="flex-1 flex justify-center space-x-4 font-semibold text-nowrap text-sm sm:text-lg">
@@ -22,7 +25,7 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li className="hover:bg-indigo-600 t p-2 rounded">
-              <Link to="/dash">Generate Cv</Link>
+              <Link to="/dash">Make Cv</Link>
             </li>
             <li className="hover:bg-indigo-600 p-2 rounded">
               <Link to="/Contact">Contact Us</Link>
@@ -64,21 +67,27 @@ const Navbar = () => {
                 className="absolute top-4 right-4">
                 <IoClose className="text-2xl" />
               </button>
-              <ul className="flex flex-col space-y-4 text-center text-lg">
+              <ul className="flex flex-col space-y-8 text-center text-lg">
+                {/* Logo Section */}
+                <button className="flex-1">
+                  <Link to="/">
+                    <h1 className="text-white text-3xl">Cv Maker</h1>
+                  </Link>
+                </button>
                 <li>
-                  <a href="/" className=" hover:underline block py-2">
+                  <Link to="/" className=" hover:underline block py-2">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/about" className=" hover:underline block py-2">
-                    About Us
-                  </a>
+                  <Link to="/dash" className=" hover:underline block py-2">
+                    Make Cv
+                  </Link>
                 </li>
                 <li>
-                  <a href="/contact" className=" hover:underline block py-2">
+                  <Link to="/contact" className=" hover:underline block py-2">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <div className="flex justify-center space-x-6 mt-8 text-2xl">
