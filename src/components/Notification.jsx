@@ -10,7 +10,8 @@ const Notification = () => {
       {openNoti && (
         <div className="relative bg-indigo-500 text-white py-2 text-center">
           <p className="animate-pulse text-white">
-            50% for all new Account get access to premium features
+            Create Your Perfect AI-Generated CV in Minutes – Download
+            Instantly!
           </p>
           <button
             onClick={handleNotiToggle}
