@@ -30,7 +30,7 @@ const MainForm = () => {
       <div className="flex font-semibold justify-around py-2 my-2 bg-white shadow-full">
         <button
           onClick={handleFormPrevCat}
-          className="px-3 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm md:px-5 md:py-2 md:text-base lg:px-6 lg:py-3 lg:text-lg hover:bg-green-500 hover:text-gray-100 font-bold text-white bg-green-600 shadow-md rounded-lg"
+          className="px-3 text-md hover:bg-green-600 hover:text-white font-medium text-green-800 py-2 bg-green-200 shadow-md rounded-md"
           disabled={formCat === 0}>
           <FaArrowRight className="text-xs inline-block me-2 rotate-180" />
           Previous
@@ -39,7 +39,7 @@ const MainForm = () => {
         {cats.map((cat, index) =>
           index === formCat ? (
             <div
-              className="text-base sm:text-lg md:text-xl lg:text-2xl mx-2"
+              className="text-base sm:text-lg mt-3 font-bold md:text-xl lg:text-2xl mx-2"
               key={index}>
               {cat}
             </div>
@@ -50,9 +50,8 @@ const MainForm = () => {
 
         <button
           onClick={handleFormNextCat}
-          className="px-3 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm md:px-5 md:py-2 md:text-base lg:px-6 lg:py-3 lg:text-lg hover:bg-green-500 hover:text-gray-100 font-bold text-white bg-green-600 shadow-md rounded-lg"
-          disabled={formCat === 6}>
-          Next
+          className="px-5 text-md hover:bg-green-600 hover:text-white font-medium text-green-800 py-2 bg-green-200 shadow-md rounded-md"
+          disabled={formCat === 6}>Next
           <FaArrowRight className="text-xs inline-block ms-2" />
         </button>
       </div>

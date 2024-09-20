@@ -82,12 +82,15 @@ const FormPersonal = () => {
         />
       </div>
       <div>
-        <button
-          type="submit"
-          onClick={handleSubmit}
-          className="px-8 text-md hover:bg-green-600 hover:text-white font-medium text-green-800 py-2 bg-green-200 shadow-md rounded-md">
-          Update Cv
-        </button>
+        <div className="flex justify-center mt-10">
+          <button
+            type="submit"
+            onClick={handleSubmit}
+            className="px-8 mt-10 text-md hover:bg-green-600 hover:text-white font-medium text-green-800 py-2 bg-green-200 shadow-md rounded-md">
+            {" "}
+            Update Cv
+          </button>
+        </div>
       </div>
     </>
   );

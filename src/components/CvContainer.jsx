@@ -22,7 +22,7 @@ const CvContainer = () => {
         <div className="container mx-auto px-4 py-8 h-full">
           <div
             id="formdown"
-            className="flex flex-col sm:flex-col lg:flex-row h-full gap-8 ">
+            className="flex flex-col-reverse md:flex-col sm:flex-col lg:flex-row h-full gap-8 ">
             {/* Form 1: CV Input Form */}
             <div className="w-full lg:w-1/2 shadow-full">
               {/* <CvTemplate2 /> */}

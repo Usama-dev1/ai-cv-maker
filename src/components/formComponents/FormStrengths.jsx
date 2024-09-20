@@ -1,5 +1,7 @@
 import React, { useState, useCallback } from "react";
 import { useCvHook } from "../hooks/../../hooks/useCvHook";
+import { FaPlusCircle, FaMinusCircle } from "react-icons/fa";
+
 
 
 const FormStrengths = () => {
@@ -75,27 +77,30 @@ const FormStrengths = () => {
               <button
                 type="button"
                 onClick={addFields}
-                className="px-10 text-lg hover:bg-indigo-500 hover:text-gray-100 font-bold text-white py-2 bg-indigo-600 shadow-2xl rounded-xl">
-                Add Strengths
+                className="my-2 px-4 text-md hover:bg-indigo-400-400 hover:text-opacity-50 font-medium text-white py-2 bg-indigo-600 shadow-md rounded-md">
+                <FaPlusCircle className="inline me-1" />
+                Add
               </button>
 
               {index !== 0 && (
                 <button
                   type="button"
                   onClick={() => removeField(index)}
-                  className="px-10 text-lg mx-10 hover:bg-red-500 hover:text-gray-100 font-bold text-white py-2 bg-red-600 shadow-2xl rounded-xl">
-                  Remove Strength
+                  className="my-2 mx-5 px-4 text-md hover:bg-red-400 hover:text-opacity-50 font-medium text-white py-2 bg-red-500 shadow-md rounded-md">
+                  <FaMinusCircle className="inline me-1" />
+                  Delete
                 </button>
               )}
             </div>
           </div>
         ))}
       </div>
-      <div>
+      <div className="flex justify-center mt-10">
         <button
           type="submit"
           onClick={handleSubmit}
-          className="px-8 text-md hover:bg-green-600 hover:text-white font-medium text-green-800 py-2 bg-green-200 shadow-md rounded-md">
+          className="px-8 mt-10 text-md hover:bg-green-600 hover:text-white font-medium text-green-800 py-2 bg-green-200 shadow-md rounded-md">
+          {" "}
           Update Cv
         </button>
       </div>
