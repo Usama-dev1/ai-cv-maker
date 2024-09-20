@@ -50,7 +50,7 @@ const Navbar = () => {
       {/* Mobile Navbar */}
       <div className="sm:hidden bg-indigo-600 text-white">
         <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <h1 className="text-white text-2xl">LOGO</h1>
+          <h1 className="text-white text-2xl">Cv Maker</h1>
           <button onClick={handleMenuToggle}>
             {open ? (
               <IoClose className="text-2xl" />
